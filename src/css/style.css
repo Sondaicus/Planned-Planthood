@@ -3,25 +3,29 @@
 /* makes sizing simpler */
 *,
 *::before,
-*::after {
+*::after 
+{
   box-sizing: border-box;
 }
 
 /* remove default spacing */
 /* force styling of type through styling, rather than elements */
-* {
+* 
+{
   margin: 0;
   padding: 0;
   font: inherit;
 }
 
 /* dark mode user-agent-styles */
-html {
+html 
+{
   color-scheme: dark light;
 }
 
 /* min body height */
-body {
+body 
+{
   min-height: 100vh;
 }
 
@@ -29,7 +33,8 @@ body {
 img,
 picture,
 svg,
-video {
+video 
+{
   display: block;
   max-width: 100%;
 }
@@ -40,25 +45,29 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6 
+{
   text-wrap: balance;
 }
 
 p,
 li,
-figcaption {
+figcaption 
+{
   text-wrap: pretty;
   max-width: 55ch;
 }
 
 /* for container queries, landmarks as containers */
 body > :is(header, footer),
-main {
+main 
+{
   container-type: inline-size;
 }
 
 /* remove list style but keep it as list for Safari browser - use with <ul role="list"> */
-[role="list"] {
+[role="list"] 
+{
   list-style: none;
   margin: 0;
   padding: 0;
@@ -67,7 +76,8 @@ main {
 /* Theme */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-:root {
+:root 
+{
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-neutral-200: hsl(0, 0%, 87%);
   --clr-neutral-300: hsl(0, 0%, 57%);
@@ -130,7 +140,8 @@ main {
 }
 
 /* Utilities */
-.visually-hidden {
+.visually-hidden 
+{
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
@@ -141,27 +152,32 @@ main {
 }
 
 /* Composition */
-.flow > * + * {
+.flow > * + * 
+{
   margin-block-start: var(--flow-space, 1em);
 }
 
 /* Global/base */
 h2,
-h3 {
+h3 
+{
   font-weight: var(--fw-bold);
   line-height: 1;
 }
 
-h2 {
+h2 
+{
   font-size: var(--fs-700);
 }
 
-h3 {
+h3 
+{
   font-size: var(--fs-600);
   font-weight: var(--fw-semi-bold);
 }
 
-a {
+a 
+{
   text-decoration: none;
   color: var(--clr-accent);
 
@@ -172,7 +188,8 @@ a {
   }
 }
 
-body {
+body 
+{
   font-family: var(--font-base);
   background-color: var(--clr-accent-light-1);
   color: var(--clr-primary-dark);

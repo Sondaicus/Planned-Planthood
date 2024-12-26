@@ -1,0 +1,14 @@
+.header_main_body
+{
+    background-color: rgb(235, 239, 238);
+}
+
+svg.footer_logo 
+{
+    image
+    {
+        object-fit: contain;
+        height: 44px;
+        width: 44px;
+    }
+}
