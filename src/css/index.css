@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: auto auto;
     color: rgb(11, 133, 110);
-
+    font-weight: bold;
 
     /*
         column-gap: 2rem;
@@ -20,6 +20,8 @@
 {
     display: grid;
     grid-template-columns: auto auto;
+    justify-content: center;
+    width: 44px;
 }
 
 .header_footer_svg
@@ -39,6 +41,7 @@
     border: none;
     background-color: inherit;
     color: inherit;
+    font-weight: bold;
 }
 
 .header_main_body
@@ -49,10 +52,33 @@
     flex-flow: column wrap;
 }
 
+.header_main_texts
+{
+    display: flex;
+    flex-flow: column wrap;
+    width: 30%;
+    margin-top: 3%;
+
+    h1
+    {
+        margin-bottom: 1.5%;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    p
+    {
+        text-align: center;
+        margin-top: 1.5%;
+    }
+}
+
 .header_main_flowers_border
 {
     background-color: rgb(255, 255, 255);
     padding: 1rem;
+    bottom: 17px;
+    bottom: 3%;
 }
 
 .header_main_flowers_collection
@@ -60,6 +86,7 @@
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
+    
 
 
     /*
@@ -153,4 +180,77 @@ img.header_main_flower_img[src="../images/png/img1_wsimg_com-isteam-stock-103535
 {
     height: 251px;
     width: 289.3333333333333px;
+}
+
+.header_email
+{
+    height: 295px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    
+}
+
+.header_email_svg
+{
+    height:200px;
+    width:200px;
+
+
+    circle 
+    {
+        fill: rgb(11, 133, 110);
+        cx:100px; 
+        cy:100px;
+        r:100px;
+    }
+
+    image
+    {
+        width: 50%;
+        height: 50%;
+        transform: translate(25%,25%);
+    }
+}
+
+.header_email_newsletter
+{
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    clip-path: inset(0% 19.5% 0% 0%);
+}
+
+.header_email_text
+{
+    width: 18.36rem;
+    right: 4.23rem; /*68px*/
+    margin-bottom: 10px;
+}
+
+.header_email_input
+{
+    input
+    {
+        border-radius: 2rem; /*22px*/
+    }
+
+    input[type=email]
+    {
+        padding: 1.25em;
+        height: 2.8rem; /*41px*/
+        width: 21.6rem; /*345px*/
+        border-width: 1px;
+        border-color: black;
+    }
+
+    input[type=submit]
+    {
+        color: rgb(255, 255, 255);
+        background-color: rgb(11, 133, 110);
+        border: none;
+        width: 6em; /*80px*/
+        height: 2.3rem; /*37px*/
+        right: 5.5rem; /*88px*/
+    }
 }
