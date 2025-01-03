@@ -144,8 +144,6 @@
     object-fit: cover;
 }
 
-
-
 img.header_main_flower_img[src="../images/jpg/coley-christine-GyvMk5pPDXI-unsplash.jpg"]
 {
     height: 504px;
@@ -188,14 +186,12 @@ img.header_main_flower_img[src="../images/png/img1_wsimg_com-isteam-stock-103535
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
-    
 }
 
-.header_email_svg
+.svg-circle_fill-rgbx11x133x110_stroke-white
 {
     height:200px;
     width:200px;
-
 
     circle 
     {
@@ -253,4 +249,64 @@ img.header_main_flower_img[src="../images/png/img1_wsimg_com-isteam-stock-103535
         height: 2.3rem; /*37px*/
         right: 5.5rem; /*88px*/
     }
+}
+
+.main_content_field
+{
+    background-color: rgb(235, 239, 238);
+    /*
+    height: 1767px;
+    */
+
+    height: 10px;
+}
+
+.main_previous_plants
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    height: 281px;
+    gap: 4rem;
+}
+
+.main_previous_plants_compr
+{
+    display: grid;
+    grid-template-rows: auto auto;
+    width: 476px;
+    height: 10rem; /*160px*/
+}
+
+.main_previous_plants_text
+{
+    height: 100%;
+    h2
+    {
+        margin-bottom: 0.625rem; /*10px*/
+    }
+}
+
+.main_previous_plants_button
+{
+    width: 100%;
+    height: 100%;
+    direction: rtl;
+
+    button
+    {
+        color: rgb(255, 255, 255);
+        background-color: rgb(11, 133, 110);
+        border: none;
+        border-radius: 2rem; /*22px*/
+        width: 8.7rem; /*139px*/
+        height: 2.3rem; /*37px*/
+        bottom: calc(2.3rem - 100%);
+    }
+}
+
+.main_bottom_border
+{
+    background-color: rgb(235, 239, 238);
+    height: 48px;
 }
