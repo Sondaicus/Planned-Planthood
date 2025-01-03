@@ -253,12 +253,90 @@ img.header_main_flower_img[src="../images/png/img1_wsimg_com-isteam-stock-103535
 
 .main_content_field
 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
     background-color: rgb(235, 239, 238);
-    /*
     height: 1767px;
-    */
+}
 
-    height: 10px;
+.main_content_panel
+{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    height: 554px;
+    width: 213px;
+    
+
+    [data-type=gurka]
+    {
+        .main_content_panel_picture
+        {
+            background-image: url("../images/png/a15a.net_home-business-review-is-network-marketing-a-good-fit-for-you.png");
+        }
+    }
+}
+
+.main_content_panel[data-type=gurka]
+{
+    .main_content_panel_picture
+    {
+        background-image: url("../images/png/a15a.net_home-business-review-is-network-marketing-a-good-fit-for-you.png");
+    }
+}
+
+.main_content_panel[data-type=tomat]
+{
+    .main_content_panel_picture
+    {
+        background-image: url("../images/jpg/deck-benches.jpg");
+    }
+}
+
+.main_content_panel[data-type=pelargon]
+{
+    .main_content_panel_picture
+    {
+        background-image: url("../images/jpg/466400627_9239395322737670_2626653281541698423_n.jpg");
+    }
+}
+
+.main_content_panel[data-type=sallad]
+{
+    .main_content_panel_picture
+    {
+        background-image: url("../images/png/8ebfa9_22032532d0594546a4cd25941a7bb904~mv2.png");
+    }
+}  
+
+.main_content_panel[data-type=ormbunke]
+{
+    .main_content_panel_picture
+    {
+        background-image: url("../images/jpg/Succulent_Terrarium_1.jpg");
+    }
+}
+
+.main_content_panel_picture
+{
+    margin-top: 1rem; /*16px*/
+    height: 13rem; /*208px*/
+    width: 181px;
+}
+
+.main_content_panel_svg
+{
+    width: 100%;
+    height: 100%;
+
+    image
+    {
+        height: 95px;
+        width: 69.81395348837209px;
+        transform: translate(31%,27%);
+    }
 }
 
 .main_previous_plants
