@@ -258,6 +258,8 @@ img.header_main_flower_img[src="../images/png/img1_wsimg_com-isteam-stock-103535
     justify-content: center;
     background-color: rgb(235, 239, 238);
     height: 1767px;
+    column-gap: 12px;
+    row-gap: 12px;
 }
 
 .main_content_panel
