@@ -8,18 +8,22 @@
     display: grid;
     grid-template-columns: auto auto;
     color: rgb(11, 133, 110);
+    height: 59px;
+    width: 900px;
+    padding-right: 16px;
     font-weight: bold;
 }
 
-.header_footer_logo
+.logo_and_title
 {
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: center;
-    width: 44px;
+    justify-content: left;
+    width: 100%;
+    gap: 15px;
 }
 
-.header_footer_svg
+.logo_and_title_svg
 {
     width: 44px;
     height: 42px;
@@ -29,14 +33,25 @@
 {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    justify-content: right;
+    column-gap: 3.75rem; /*60px*/
+    width: 100%;
 }
 
-.header_footer_button
+.footer_button
 {
     border: none;
     background-color: inherit;
     color: inherit;
     font-weight: bold;
+}
+
+.footer_button[data-type=header-footer]
+{
+    display: grid;
+    justify-content: left;
+    width: 100%;
+    font-size: 1.125rem; /*18px*/
 }
 
 .header_main_body
@@ -528,4 +543,65 @@ img.header_main_flower_img[src="../images/png/img1_wsimg_com-isteam-stock-103535
 {
     background-color: rgb(235, 239, 238);
     height: 48px;
+}
+
+.footer_content_field
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(11, 133, 110);
+    color: rgb(255, 255, 255);
+    height: 350px;
+}
+
+.footer_content_field_contact_info
+{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    width: 373px;
+    row-gap: 1.5rem /*24px*/;
+    left: 86px;
+
+    article
+    {
+        width: inherit;
+        justify-content: left;
+    }
+}
+
+.footer_content_field_contact_option
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    font-weight: bold;
+    column-gap: 0.5rem /*8px*/;
+}
+
+.contact_info_icon[data-type=phone_icon]
+{
+    width: 18px;
+    height: 18px;
+}
+
+.contact_info_icon[data-type=email_icon]
+{
+    height: 16px;
+    width: 20px;
+}
+
+.footer_content_field_links
+{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 18px;
+    right: 60px;
+    bottom: 58px;
+}
+
+.footer_button[data-type=footer-footer]
+{
+    display: grid;
+    justify-content: left;
+    width: 100%;
+    font-size: 1rem;
 }
