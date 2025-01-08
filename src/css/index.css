@@ -9,11 +9,6 @@
     grid-template-columns: auto auto;
     color: rgb(11, 133, 110);
     font-weight: bold;
-
-    /*
-        column-gap: 2rem;
-        row-gap: 6rem;
-    */
 }
 
 .header_footer_logo
@@ -86,15 +81,6 @@
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
-    
-
-
-    /*
-        background-color: rgb(195, 215, 44);
-        height: 0px;;
-        max-height: 504px;
-        max-width: 868px;
-    */
 }
 
 .header_main_flowers_subsidiary_1
@@ -102,13 +88,6 @@
     display: inherit;
     grid-template-columns: auto;
     justify-content: inherit;
- 
-    /*
-        background-color: blue;
-        height: 0px;
-        max-height: inherit;
-        max-width: 33.3333333%;
-    */
 }
 
 .header_main_flowers_subsidiary_2
@@ -116,13 +95,6 @@
     display: inherit;
     grid-template-rows: auto auto;
     justify-content: inherit;
-
-    /*
-        background-color: rgb(168, 24, 67);
-        height: 0px;
-        max-height: 50%;
-        max-width: inherit;
-    */
 }
 
 .header_main_flowers_subsidiary_3
@@ -130,13 +102,6 @@
     display: inherit;
     grid-template-columns: auto auto;
     justify-content: inherit;
- 
-    /*
-        background-color: rgb(43, 168, 24);
-        height: 0px;
-        max-height: inherit;
-        max-width: 50%;
-    */
 }
 
 .header_main_flower_img
@@ -251,15 +216,19 @@ img.header_main_flower_img[src="../images/png/img1_wsimg_com-isteam-stock-103535
     }
 }
 
+.main_content_field_border
+{
+    background-color: rgb(235, 239, 238);
+    padding-top: 47px;
+    padding-bottom: 45px;
+}
+
 .main_content_field
 {
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: center;
-    background-color: rgb(235, 239, 238);
-    height: 1767px;
-    column-gap: 12px;
-    row-gap: 12px;
+    gap: 12px;
 }
 
 .main_content_panel
@@ -270,15 +239,13 @@ img.header_main_flower_img[src="../images/png/img1_wsimg_com-isteam-stock-103535
     background-color: rgb(255, 255, 255);
     height: 554px;
     width: 213px;
-    
+}
 
-    [data-type=gurka]
-    {
-        .main_content_panel_picture
-        {
-            background-image: url("../images/png/a15a.net_home-business-review-is-network-marketing-a-good-fit-for-you.png");
-        }
-    }
+.main_content_panel_encompasing_element
+{
+    height: 522px;
+    width: 181px;
+    margin-top: 1rem; /*16px*/
 }
 
 .main_content_panel[data-type=gurka]
@@ -297,11 +264,19 @@ img.header_main_flower_img[src="../images/png/img1_wsimg_com-isteam-stock-103535
     }
 }
 
-.main_content_panel[data-type=pelargon]
+.main_content_panel[data-type=pelagron]
 {
     .main_content_panel_picture
     {
         background-image: url("../images/jpg/466400627_9239395322737670_2626653281541698423_n.jpg");
+    }
+}
+
+.main_content_panel[data-type=basilika]
+{
+    .main_content_panel_picture
+    {
+        background-image: url("../images/jpg/paris.jpg");
     }
 }
 
@@ -317,15 +292,15 @@ img.header_main_flower_img[src="../images/png/img1_wsimg_com-isteam-stock-103535
 {
     .main_content_panel_picture
     {
-        background-image: url("../images/jpg/Succulent_Terrarium_1.jpg");
+        background-image: url("../images/jpg/index-slider2.jpg");
     }
 }
 
 .main_content_panel_picture
 {
-    margin-top: 1rem; /*16px*/
     height: 13rem; /*208px*/
     width: 181px;
+    background-size: 100% 100%;
 }
 
 .main_content_panel_svg
@@ -339,6 +314,170 @@ img.header_main_flower_img[src="../images/png/img1_wsimg_com-isteam-stock-103535
         width: 69.81395348837209px;
         transform: translate(31%,27%);
     }
+}
+
+.main_content_panel_tags
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 1rem; /*16px*/
+    gap: 4px;
+}
+
+.main_content_panel_tag_element
+{
+    display: flex;
+    margin: 0px;
+    height: 24px;
+    border-radius: 2rem; /*22px*/
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.main_content_panel_tag_element[data-type=blommor]
+{
+    background-color: rgb(162, 12, 7);
+}
+
+.main_content_panel_tag_element[data-type=ätbart]
+{
+    background-color: rgb(111, 123, 30);
+}
+
+.main_content_panel_tag_element[data-type=grönska]
+{
+    background-color: rgb(47, 133, 30);
+}
+
+.main_content_panel_tag_element[data-type=solälskande]
+{
+    background-color: rgb(158, 77, 10);
+}
+
+.main_content_panel_tag_element[data-type=lättodlat]
+{
+    background-color: rgb(56, 105, 240);
+}
+
+.main_content_panel_tag_element[data-type=dekorativ]
+{
+    background-color: rgb(123, 21, 183);
+}
+
+.main_content_panel_tag_element[data-type=färgstark]
+{
+    background-color: rgb(186, 54, 179);
+}
+
+.main_content_panel_tag_element[data-type=tålig]
+{
+    background-color: rgb(30, 63, 133);
+}
+
+.main_content_panel_tag_element[data-type=kryddor]
+{
+    background-color: rgb(10, 133, 110);
+}
+
+.main_content_panel_tag_element[data-type=doftande]
+{
+    background-color: rgb(181, 59, 126);
+}
+
+.main_content_panel_tag_element[data-type=snabbväxande]
+{
+    background-color: rgb(77, 84, 96);
+}
+
+.main_content_panel_tag_element[data-type=luftfuktande]
+{
+    background-color: rgb(11, 127, 127);
+}
+
+.main_content_panel_text
+{
+    margin-top: 1rem; /*16px*/
+    height: 164px;
+
+    h3
+    {
+        font-size: 1.5rem; /*24px*/
+        margin-bottom: 1rem /*16px*/;
+    }
+
+    p
+    {
+        line-height: 1.265625rem; /*20.25px*/
+    }
+}
+
+.main_content_panel_footer
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+    margin-top: 1rem; /*16px*/
+}
+
+.main_content_panel_profile_picture
+{
+    height: 50px;
+    width: 50px;
+    background-size: 100% 100%;
+}
+
+.main_content_panel_profile_picture[title=coolio]
+{
+    background-image: url("../images/png/avatar.iran.liara.run-public-66.png");
+}
+
+.main_content_panel_profile_picture[title=anna_odlare]
+{
+    background-image: url("../images/png/avatar.iran.liara.run-public-12.png");
+}
+
+.main_content_panel_profile_picture[title=blomsterkalle]
+{
+    background-image: url("../images/png/avatar.iran.liara.run-public-5.png");
+}
+
+.main_content_panel_profile_picture[title=krydd-malin]
+{
+    background-image: url("../images/png/avatar.iran.liara.run-public-56.png");
+}
+
+.main_content_panel_profile_picture[title=grönis]
+{
+    background-image: url("../images/png/avatar.iran.liara.run-public-11.png");
+}
+
+.main_content_panel_profile_picture[title=naturvännen]
+{
+    background-image: url("../images/png/avatar.iran.liara.run-public-45.png");
+}
+
+.main_content_panel_footer_info
+{
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-left: 8px;
+
+    p
+    {
+        margin: 0px;
+        font-size: 12px;
+        margin-bottom: 1px;
+        margin-top: 1px;
+    }
+}
+
+.main_content_panel_footer_name
+{
+    font-weight: bold;
 }
 
 .main_previous_plants
