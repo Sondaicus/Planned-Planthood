@@ -19,10 +19,6 @@
 .program_encompasing_element
 {
     position: relative;
-}
-
-.task_encompasing_element
-{
     height: min-content;
     width: min-content;
 }
